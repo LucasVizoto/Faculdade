@@ -1,0 +1,37 @@
+Analise as afirmativas a seguir:
+
+I. uma função pode retornar um valor, e quando esta for utilizada/chamada, deve-se atribuir o valor retornado a uma variável ou então mostrar diretamente o resultado, com um console.log() por exemplo
+
+II. quando uma função recebe uma variável do tipo primitivo como parâmetro, esta passagem é por referência. E quando uma função recebe uma variável do tipo vetor ou objeto como parâmetro, esta passagem é por valor
+
+III. a ordem dos parâmetros de uma função deve ser obedecida quando for chamá-la.
+
+
+
+Estão corretas:
+
+
+
+Escolha uma:
+a. Apenas II
+b. Apenas III
+c. Apenas I e III ASSINALADA
+d. I, II e III
+e. Apenas I
+---------------------------------------------
+Sobre as funções filter, some e find que percorrem um vetor, analise as afirmações:
+
+I. A função some retorna true caso encontre o item procurado, e false caso não encontre no vetor
+
+II. A função find retorna um vetor contendo todos os itens que obedecem a condição de filtro no vetor
+
+III. A função filter retorna o primeiro item que obedece a condição da busca no vetor
+
+Escolha uma:
+a. Apenas I ASSINALADA
+b. I, II e III
+c. Apenas I e III
+d. Apenas II e III
+e. Apenas I e II
+
+NO MEU RACIONIO ESTÁ AO CONTRÁRIO, POIS O FILTER Q GERA O VETOR E O FIND COLOCA A PRIMEIRA OCORRÊNCIA

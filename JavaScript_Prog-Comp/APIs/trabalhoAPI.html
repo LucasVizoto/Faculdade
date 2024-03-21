@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Filmes</title>
+</head>
+<body>
+    <style>
+    #dados{
+        font-style: italic ;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        input{
+border-radius: 10px;
+color: dimgray;
+text-decoration: aliceblue;
+padding: 10px;
+text-align: initial;
+width: 50%;
+}
+#fotos{
+    margin: 20px;
+    display: flex;  
+    position: relative;
+    left: 35%;
+
+}
+#bot{
+margin: 30px;
+padding: 8px;
+border-radius: 10px;
+}
+button:hover{
+background-color: grey;
+transition: 2s;
+
+}
+
+    </style> 
+
+    <div id="dados">
+        <label for="busca">Nome do filme que deseja saber</label>
+        <input type="text" id="busca">
+    </div>
+    <div id="dados">
+        <div>
+            <label for="nomeFilme">Nome do Filme:</label>
+            <input readonly ype="text" id="nomeFilme">
+        </div>
+        <div>
+            <label for="classificacao">Classificação Etária:</label>
+            <input readonly ype="text" id="classificacao">
+        </div>
+        <div>
+            <label for="lancado">Data do Lançamento:</label>
+            <input readonly ype="text" id="lancado">
+        </div>
+        <div>
+            <label for="plot">Plot do Filme:</label>
+            <input readonly ype="text" id="plot">
+        </div>
+        <div>
+            <label for="genre">Gênero do Filme:</label>
+            <input readonly ype="text" id="genre">
+        </div>
+        <div>
+            <label for="language">Idioma Original do Filme:</label>
+            <input readonly ype="text" id="language">
+        </div>
+        <div id="fotos">
+            <label for="foto">Foto:</label>
+            <img src="" alt="Poster aqui" id="foto">
+        </div>
+    </div>
+    <div id="bot">
+        <button type="button" onclick="buscaFILME()" id="bot">Buscar</button> 
+    </div>
+<script src="trabalhoAPI.js"></script>    
+</body>
+</html>

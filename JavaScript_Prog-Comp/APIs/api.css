@@ -1,0 +1,21 @@
+input{
+border-radius: 10px;
+color: dimgray;
+text-decoration: aliceblue;
+padding: 10px;
+text-align: initial;
+width:95%;
+}
+#fotos{
+    margin: 20px;
+    display: flex;  
+    position: relative;
+    left: 35%;
+
+}
+#bot{
+margin: 30px;
+padding: 8px;
+border-radius: 10px;
+
+}
