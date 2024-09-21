@@ -1,0 +1,1 @@
+(Math.random() * (30 - 1) + 1).toFixed()

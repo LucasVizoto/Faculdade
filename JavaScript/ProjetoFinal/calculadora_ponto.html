@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="claro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trote Solidario - Calculadora</title>
+    <link rel="stylesheet" href="calculadora_ponto.css">
+    <link rel="icon" href="./assets/unifacef_icon.png">
+</head>
+<body>
+    <div id="container">
+        <!-- Aqui está o cabeçalho do seu site, com o logo e uma mensagem -->
+        <div id="headers">
+            <div id="profile">
+            <img src="./assets/trote.png" alt="Trote Solidario" id="foto">
+            </div>
+            <div id="switch" onclick="trocaSwitch()">
+                <button> </button>
+                <span> </span>
+            </div>
+            <h1 id="Titulo">
+            Olá aqui você pode calcular a pontuação da sua equipe informando os alimentos de doações acumulados.
+            </h1>
+        </div>
+        <!-- Aqui está o formulário para inserir as quantidades de alimentos e calcular os pontos -->
+        <div id="dados">
+            <!-- Para cada tipo de alimento, há um cabeçalho e uma entrada para a quantidade -->
+            <h1 class="tipoA">Insira a quantidade de conjunto padrão(Kit alimentação + Lata de suplemento) - 50pt</h1>
+            <input type="number" class="informações" id="ConjP">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="ConjPButton" onclick="ConjPCal()">
+            <p id="ConjPP">Os pontos adquiridos com esses alimentos é: </br></p>
+            
+            <!-- Esse é um exemplo de outro tipo de alimento -->
+            <h1 class="tipoA">Insira a quantidade de kits alimentação - 25pt</h1>
+            <input type="number" class="informações" id="KitA">
+            <input type="button" value="Calcular" id="KitAButton" onclick="KitACal()">
+            <p id="KitAP">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de suplemento baunilha 400g(Ensure) - 10pt</h1>
+            <input type="number" class="informações" id="Suple">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="SupleButton" onclick="SupleCal()">
+            <p id="SupleP">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de pacotes de arroz de 5kg - 5pt</h1>
+            <input type="number" class="informações" id="Arroz5">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="Arroz5Button" onclick="Arroz5Cal()">
+            <p id="Arroz5P">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de de pacotes de arroz de 1kg - 1pt</h1>
+            <input type="number" class="informações" id="Arroz1">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="Arroz1Button" onclick="Arroz1Cal()">
+            <p id="Arroz1P">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de pacotes de feijão de 2kg - 2pt</h1>
+            <input type="number" class="informações" id="Feijao2" >
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="calcular" id="Feijao2Button" onclick="Feijao2Cal()">
+            <p id="Feijao2P">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de pacote de feijão de 1kg - 1pt</h1>
+            <input type="number" class="informações" id="Feijao1">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="Feijao1Button" onclick="Feijao1Cal()">
+            <p id="Feijao1P">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de pacotes de macarrão de 500g - 1/2pt</h1>
+            <input type="number" class="informações" id="Macarrao">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="MacarraoButton" onclick="MacarraoCal()">
+            <p id="MacarraoP">Os pontos adquiridos com esses alimentos é: </br></p>
+
+            <h1 class="tipoA">Insira a quantidade de oléo de 900ml - 1pt</h1>
+            <input type="number" class="informações" id="oleo">
+            <!-- Para cada entrada, há um botão para calcular os pontos correspondentes -->
+            <input type="button" value="Calcular" id="oleoButton" onclick="OleoCal()">
+            <p id="OleoP">Os pontos adquiridos com esses alimentos é: </br></p>
+
+        </div>
+        
+        <!-- Aqui está o botão final para calcular a soma total dos pontos -->
+        <div id="DivFinal">
+            <input type="button" value="Calcular Pontos" id="calcular" onclick="calcular()">
+            <p id="somaFinal"> A soma dos valores é</p>
+        </div>
+    </div>
+    
+    <!-- Este é o arquivo JavaScript que contém a lógica para calcular os pontos -->
+    <img id="kert" src="" alt="">
+    <div id="faceflogo" >
+     <button id="sim" onclick="bot()">
+        <ion-icon name="warning-outline"></ion-icon>     
+    </button>   
+     <button id="tira" onclick="bot2()">
+        <ion-icon name="trash-bin-outline"></ion-icon>
+     </button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="calculadora_pontos.js"></script>
+</body>
+</html>

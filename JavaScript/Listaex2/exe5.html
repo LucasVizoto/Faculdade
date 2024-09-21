@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 </title>
+    <link rel="stylesheet" href="./lista2.css">
+</head>
+<body>
+    <div id="ex">
+        <h5>Exercício 5</h5>
+    </div>
+    <div id="container">
+        <div id="numiro">
+       Escreva aqui o número 1 <input type="number" id="n1"> 
+        </div>
+        <div id="numiro1">
+       Escreva aqui o número 2 <input type="number" id="n2">
+        </div>
+            <div id="escolha">
+                Escolha a operação
+                <select id="escol">
+                    <option value="1"> Média </option>
+                    <option value="2"> Subtração </option>
+                    <option value="3"> Produto </option>
+                    <option value="4"> Divisão </option>
+                </select>
+            </div>
+            <div id="bot">
+                <button onclick="ex5()"> Calcular Operação</button>
+            </div>
+            <div id="resultado">
+                <p>
+                  O resultado da operação é <span id="res"></span>  
+                </p>
+            </div>
+    </div>
+    <script src="./lista2.js"></script>    
+</body>
+</html>

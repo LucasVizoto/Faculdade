@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color: rgb(194, 194, 194);
+    --bg-urlbackground: rgb(193,19,19); background: linear-gradient(121deg, rgba(193,19,19,1) 9%, rgba(0,0,0,1) 60%);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    /* superfície dos links no fundo escuro ao passar o mouse*/
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    /* faz um realce nos ícones das redes socias */
+    --realce-color: rgba(255, 255, 255, 0.2);
+    --switch: url(./assets/sun.svg);
+    --b1: rgb(175, 14, 14);
+    --b2: rgb(177, 5, 5);
+    --logo: url(./assets/logoUnifacef.webp);
+}
+.claro {
+    --text-color: rgb(32, 32, 32);
+    --bg-urlbackground: rgb(140,9,179); background: linear-gradient(121deg, rgba(140,9,179,1) 16%, rgba(184,132,213,1) 48%);
+    /* cor da borda dos links no fundo claro*/
+    --surface-color: rgba(110, 33, 141, 0.363);
+    /* superfície dos links no fundo claro ao passar o mouse*/
+    --surface-color-hover: rgba(97, 97, 97, 0.2);
+    /* faz um realce nos ícones das redes socias */
+    --realce-color: rgba(48, 48, 48, 0.274);
+    --switch: url(./assets/moon-stars.svg);
+    --b1: rgb(65, 0, 117);
+    --b2: rgb(90, 46, 133);
+    --logo: url(./assets/logofacefpreta.png);
+}
+
+body {
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+#container{
+    width: 360px;
+    height: 600px;
+    margin: 40px auto 0px;
+    text-align: center;
+
+}
+
+#profile img {
+    width: 112px;
+}
+#profile p {
+    font-weight: 500;
+    line-height: 24px;   
+}
+
+#container ul {
+    list-style: none;
+    display: flex; 
+    flex-direction: column;
+    gap: 22px;
+    padding: 30px 0px ;
+}
+#container ul li{
+    padding: 5px;
+}
+#container ul li a{
+        border: 3px solid var(--b1);
+            align-items: center; /*Alinha em vertical*/
+             justify-content: center;/*alinha em horizontal*/
+            padding: 8px 24px; /*16px top e bottom 24 left e right*/
+            font-weight: 500px;
+            font-weight: bolder;
+        background: var(--surface-color); 
+    border-radius: 20px; /*Arredonda a borda*/
+    text-decoration: none; /*Tira o sublinhado do link*/
+    transition: background 0.5s ;
+}
+
+#container ul li a:hover{
+    /*:hover = Quando passar o cursor em cima*/
+    border: 3px solid white;
+    background: var(--surface-color-hover);
+    transform: scale(115%);
+}
+#social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 2px 0px;
+    font-size: 24px;
+}
+
+#social-links a {
+    padding: 16px;
+    border-radius: 50px;
+    transition: background 2s;
+}
+
+#social-links a:hover {
+    background: var(--realce-color);
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+}
+#switch{
+
+padding-top: 30px;
+width: 100px;
+position: relative;
+margin: auto;
+}
+#switch button{
+border: 3px solid var(--b1);
+width: 33px;
+height: 33px;
+background: rgb(190, 190, 190) var(--switch) no-repeat center;
+border-radius: 50%;
+padding: 20px;
+position: absolute;/*posiciona em relação ao switch*/
+top: 50%; /*alinhar na caixa*/
+left: 0; /*joga tudo pra direita*/
+z-index: 1; /* camada 1, pqoutros elementos estão na camada 0*/
+transform:translateY(-16%) ;/* translate deslocamento do elemento, negativo pq precisa subir. positivo desce*/
+}
+#switch span{
+    border: 3px solid var(--b1);
+    display: block;
+    width: 76px;
+    height: 10px;
+    background: var(--surface-color);
+    border-radius: 9999px;
+    padding: 10px;
+}
+.claro #switch button{
+    right: 0;
+    left: initial;
+}
+
+#foto{
+    border-radius: 78px;
+    background: linear-gradient(200deg, var(--b2), var(--b1));
+    box-shadow:  12px 12px 0px var(--b1),
+             -12px -12px 0px var(--b2);
+    padding: 5px;
+}
+
+#faceflogo{
+ background: var(--logo);
+ padding: 35px;
+ background-repeat: no-repeat;
+ display: flex; 
+ flex-direction: column;
+ text-align: center;
+ margin:auto ;
+ background-position: center;
+ align-items: center; /*Alinha em vertical*/
+ justify-content: center;/*alinha em horizontal*/
+}
+#faceflogo button{
+    border: 3px solid var(--b1);
+    position: absolute;
+    align-self: start;
+    padding: 15px 15px; /*16px top e bottom 24 left e right*/
+    font-size: 24px;
+    font-weight: 500px;
+    font-weight: bolder;
+border-radius: 20px; /*Arredonda a borda*/
+text-decoration: none; /*Tira o sublinhado do link*/
+transition: background 0.5s ;
+
+
+}
+#faceflogo button :hover{
+/*:hover = Quando passar o cursor em cima*/
+border: 1px solid white;
+background: var(--surface-color-hover);
+transform: scale(115%);
+}
+#sim{
+left: 10%;    
+}
+#tira{
+    display: flex; 
+    flex-direction: column;   
+    right: 10%; 
+}
+#kert{
+    display: flex; 
+    flex-direction: column;  
+    position: relative;
+    left: 35%;
+}

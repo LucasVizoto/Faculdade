@@ -1,0 +1,50 @@
+
+#container{
+ border: 2px solid black;
+ border-radius: 30px;
+ width: 700px;
+ height: auto;
+ padding: 20px;
+ margin: 20px auto;
+ text-align: center;
+font-weight: 300;
+font-size: larger;
+}
+#escolha{
+    padding: 5px;  
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+  
+}
+#anos{
+    margin: 5px;
+    padding: 5px;  
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+  } 
+
+#calcular:hover{
+    background-color: grey;
+    transition: 2s;
+}
+#calcular{
+    margin: 10px;
+  padding: 10px;  
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+#escolha{
+    border: 1px solid black;
+    border-radius: 30px;
+}
+#muda{
+    color: brown;
+}
+#vaga{
+    color:brown;
+    font-size: x-large;
+}

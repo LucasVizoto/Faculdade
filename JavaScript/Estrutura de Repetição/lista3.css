@@ -1,0 +1,33 @@
+body{
+ font-weight: bolder;   
+}
+#bot{
+  padding: 15px;  
+  border-radius: 15%;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#bot:hover{
+background-color: pink;
+transition: 2s;
+}
+
+#letraB{
+  margin-top: 10px;  
+}
+#letraC{
+  margin-top: 10px;  
+  }
+#container{
+  border: 1px solid red;
+  border-radius: 20px;
+  margin: 20px;
+  width: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+}
+.douze{
+margin:12px;  
+}

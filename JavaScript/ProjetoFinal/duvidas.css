@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color: rgb(194, 194, 194);
+    --bg-urlbackground: rgb(193,19,19); background: linear-gradient(121deg, rgba(193,19,19,1) 9%, rgba(0,0,0,1) 60%);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    /* superfície dos links no fundo escuro ao passar o mouse*/
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    /* faz um realce nos ícones das redes socias */
+    --realce-color: rgba(255, 255, 255, 0.2);
+    --switch: url(./assets/sun.svg);
+    --b1: rgb(175, 14, 14);
+    --b2: rgb(177, 5, 5);
+    --btxt: rgb(128, 113, 113);
+    --logo: url(./assets/logoUnifacef.webp);
+    --box: linear-gradient(145deg, #011f3f, #000c18);
+}
+.claro {
+    --text-color: rgb(32, 32, 32);
+    --bg-urlbackground: rgb(140,9,179); background: linear-gradient(121deg, rgba(140,9,179,1) 16%, rgba(184,132,213,1) 48%);
+    /* cor da borda dos links no fundo claro*/
+    --surface-color: rgba(110, 33, 141, 0.363);
+    /* superfície dos links no fundo claro ao passar o mouse*/
+    --surface-color-hover: rgba(97, 97, 97, 0.2);
+    /* faz um realce nos ícones das redes socias */
+    --realce-color: rgba(48, 48, 48, 0.274);
+    --switch: url(./assets/moon-stars.svg);
+    --b1: rgb(65, 0, 117);
+    --b2: rgb(90, 46, 133);
+    --btxt: rgb(65, 0, 117);
+    --logo: url(./assets/logofacefpreta.png);
+    --box: linear-gradient(145deg, #9fcaf9d7, #86abd2ec);
+}
+
+body {
+    background-image: var(--bg-url);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+body * {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+}
+
+#container{
+    width: 540px;
+    height: auto;
+    margin: 40px auto 0px;
+    text-align: center;
+
+}
+
+#profile img {
+    width: 112px;
+}
+#profile p {
+    font-weight: 500;
+    line-height: 24px;   
+}
+
+#switch{
+
+    padding-top: 30px;
+    width: 100px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 10px;
+    }
+    #switch button{
+    border: 3px solid var(--b1);
+    width: 33px;
+    height: 33px;
+    background: rgb(190, 190, 190) var(--switch) no-repeat center;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;/*posiciona em relação ao switch*/
+    top: 50%; /*alinhar na caixa*/
+    left: 0; /*joga tudo pra direita*/
+    z-index: 1; /* camada 1, pqoutros elementos estão na camada 0*/
+    transform:translateY(-16%) ;/* translate deslocamento do elemento, negativo pq precisa subir. positivo desce*/
+    }
+    #switch span{
+        border: 3px solid var(--b1);
+        display: block;
+        width: 76px;
+        height: 10px;
+        background: var(--surface-color);
+        border-radius: 9999px;
+        padding: 10px;
+    }
+    .claro #switch button{
+        right: 0;
+        left: initial;
+    }
+    
+    #foto{
+        border-radius: 78px;
+        background: linear-gradient(200deg, var(--b2), var(--b1));
+        box-shadow:  12px 12px 0px var(--b1),
+                 -12px -12px 0px var(--b2);
+        padding: 5px;
+    }
+#duvidas img{
+    margin-bottom: 30px;
+    border: 10px solid var(--b2);
+    border-radius: 50px;
+}    
+#text{
+    font-size: x-large;
+    margin: auto;
+    border: 5px solid var(--btxt);
+    width: auto;
+    height: auto;
+    border-radius: 9999px;
+    background: var(--box);
+    box-shadow:  20px 20px 18px #5d3c3c1f,
+                 -20px -20px 18px #ffeeee1f;
+                 margin-bottom: 30px;
+
+}
+#text1{
+    font-size: x-large;
+    margin: auto;
+    border: 5px solid var(--btxt);
+    width: auto;
+    height: auto;
+    border-radius: 9999px;
+    background: var(--box);
+    box-shadow:  20px 20px 18px #5d3c3c1f,
+                 -20px -20px 18px #ffeeee1f;
+                 margin-bottom: 30px;
+
+}
+
+#text1 a:hover{
+    border: 3px solid var(--b2);
+    background: var(--surface-color-hover);
+    transform: scale(115%);
+}

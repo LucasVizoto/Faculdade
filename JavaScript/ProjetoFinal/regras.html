@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="claro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Trote Solidário - Regras</title>
+    <link rel="icon" href="./assets/unifacef_icon.png">
+    <link rel="stylesheet" href="./regras.css"/>
+</head>
+<body>
+    <div id="container">
+            <div id="profile">
+            <img id="foto" src="./assets/trote.png"
+            alt="Trote Solidário.png"/>
+            </div>
+            <div id="switch" onclick="Switch()">
+            <button></button>
+            <span></span>
+            </div>
+        <div id="t1"><p><b><br/>A abertura oficial do Trote Solidário Uni-FACEF 2023 se dará no dia 14 de fevereiro, com uma fala de boas-vindas, ressaltando a importância da ação, e posteriormente será realizada a apresentação do regulamente. As falas ocorrerão nos seguintes horários:<br/></b></p></div>
+    <div id="t2"><p><b>✓ 08h15 ➔ Período da Manhã</p>
+                        <br/>✓ 19h15 ➔ Período da Noite</b></p></div>
+    <div id="t3"> <p><b>As equipes serão responsáveis pelo planejamento, arrecadação e armazenamento dos itens aqui relacionados. A entrega dos alimentos, dos suplementos alimentares, bem como dos comprovantes de realização das provas da Doação de Sangue e da Ação Social, para fins de pontuação, deverão ocorrer única e exclusivamente, das 8h às 10h00, no dia 29/03/2023, na Unidade I (Av. Major Nicácio, 2433), conforme determinação deste Regulamento.<br/></b></p></div>
+    <!-- Tabela de alimentos -->
+    <table>
+        <caption style="font-size: large;"><strong>Tipos de alimentos</strong></caption>
+        <thead>
+            <tr>
+                <th id="fundo">Alimentos&nbsp;</th>
+                <th id="fundo">&nbsp;Peso</th>
+                <th id="fundo">Especificação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Suplemento&nbsp;</td>
+                <td>&nbsp;400g&nbsp;</td>
+                <td>&nbsp;&nbsp;Adulto<br/>&nbsp;&nbsp;Baunilha<br/>&nbsp;&nbsp;Nutren 1.0 ou Ensure<br/>50 pontos</td>
+            </tr>
+            <tr>
+                <td>Pacote de&nbsp;<br/>Arroz&nbsp;</td>
+                <td>&nbsp;5kg ou 1kg&nbsp;</td>
+                <td>5 ou 1 ponto</td>
+            </tr>
+            <tr>
+                <td>Pacote de&nbsp;<br/>Feijão&nbsp;</td>
+                <td>&nbsp;5kg ou 1kg&nbsp;</td>
+                <td>5 ou 1 ponto</td>
+            </tr>
+            <tr>
+                <td>Pacote de&nbsp;<br/>Macarrão&nbsp;</td>
+                <td>&nbsp;500g&nbsp;</td>
+                <td>1/2(0,5) pontos</td>
+            </tr>
+            <tr>
+                <td>Pacote de&nbsp;<br/>Óleo&nbsp;</td>
+                <td>&nbsp;900ml&nbsp;</td>
+                <td>1 ponto</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabela Equipes e Entidades -->
+    <table>  
+        <caption style="font-size: large;"><strong>Equipes e entidades</strong></caption>
+        <tr> 
+            <th id="fundo"> Cor </th>
+            <th id="fundo"> Sala de Entrega (local na Unid 1)</th>
+            <th id="fundo"> Apresentação </th>
+            <th id="fundo"> Entidade </th>
+        </tr>
+        <tr> 
+            <td> Amarelo </td>
+            <td> 18 </td>
+                <td> 1ª Equipe </td>
+                <td> Creche </td>
+        </tr>
+        <tr> 
+            <td> Laranja </td>
+            <td> 19 </td>
+                <td> 2ª Equipe </td>
+                <td> Lar de Idosos </td>
+        </tr>
+        <tr>
+            <td> Roxo </td>
+            <td> 20 </td>
+                <td> 3ª Equipe </td>
+                <td> Deficientes visuais </td>
+        </tr>
+        <tr>
+            <td> Verde </td>
+            <td> 21 </td>
+                <td> 4ª Equipe </td>
+                <td> Pacientes com Câncer </td>
+        </tr>
+        <tr>
+            <td> Vermelho </td>
+            <td> 22 </td>
+                <td> 5ª Equipe </td>
+                <td> Portadores de <br> Necessidades especiais </td>
+        </tr>
+   </table>
+        
+    </div>
+    <img id="kert" src="" alt="">
+    <div id="faceflogo" >
+     <button id="sim" onclick="bot()">
+        <ion-icon name="warning-outline"></ion-icon>     
+    </button>   
+     <button id="tira" onclick="bot2()">
+        <ion-icon name="trash-bin-outline"></ion-icon>
+     </button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./trote.js"></script>
+</body>
+</html>

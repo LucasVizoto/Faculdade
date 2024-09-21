@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="claro">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/unifacef_icon.png">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trote Solidário - Hall</title>
+        <link rel="stylesheet" href="trote.css"/>
+    </head>
+    <body>
+        <div id="container">
+            <div id="profile">
+                <img id="foto" src="./assets/trote.png"
+                    alt="Trote solidário"/>
+            </div>
+            <div id="switch" onclick="Switch()">
+                <button></button>
+                <span> </span>
+            </div>
+            <!-- criar uma lista não ordenada -->
+            <ul>
+                <li> <a href="regras.html" > Regras </a> </li>                
+                <li> <a href="equipes.html"> Equipes </a> </li>
+                <li> <a href="objetivos.html"> Objetivos </a> </li>
+                <li> <a href="calculadora_ponto.html"> Calculadora de Pontos </a> </li> 
+            </ul>
+            <div id="social-links"> 
+                <a href="https://github.com/LucasVizoto" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://www.instagram.com/unifacef/" 
+                    target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.youtube.com/user/tvunifacef" target="_blank">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                <a href="https://br.linkedin.com/school/uni-facef/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="./duvidas.html">
+                    <ion-icon name="help-outline"></ion-icon> 
+                </a>
+            </div>
+            <footer>
+                Desenvolvido por alunos dos cursos de bacharelado em SI/CCI da instituição Uni-FACEF
+            </footer>
+        </div>
+        <img id="kert" src="" alt="">
+        <div id="faceflogo" >
+         <button id="sim" onclick="bot()">
+            <ion-icon name="warning-outline"></ion-icon>     
+        </button>   
+         <button id="tira" onclick="bot2()">
+            <ion-icon name="trash-bin-outline"></ion-icon>
+         </button>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="trote.js"> </script>
+    </body>
+</html>

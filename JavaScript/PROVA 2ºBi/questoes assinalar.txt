@@ -1,0 +1,34 @@
+exercicio 2
+Analise as afirmações abaixo sobre recursos de vetores disponíveis em JS: 
+
+I. a função vetor.indexOf(elemento) retorna a posição do elemento no vetor, e caso o elemento não esteja presente, retorna -1
+
+II. a função vetor.includes(elemento) retorna true caso o elemento esteja presente no vetor, e false caso o elemento não esteja presente
+
+III. a propriedade vetor.length retorna a quantidade de elementos presente no vetor
+
+Estão corretas:
+
+Escolha uma:
+a. Apenas II e III
+b. Apenas I e II
+c. I, II e III X
+d. Apenas I e III
+
+exercicio 3 
+Sobre as estruturas de repetição while, do...while e for, analise as afirmações
+
+I. a estrutura do...while é melhor para disponibilizar um menu de opções ao usuário
+
+II. a estrutura while normalmente gera mais comandos de controle do loop em relação a estrutura for
+
+III. pesquise no google: percebe-se que o comando continue dentro de uma estrutura de repetição, vai para a próxima iteração do loop, enquanto que o comando break força a saída do loop
+
+Estão corretas as afirmações
+
+
+Escolha uma:
+a. Apenas I e II
+b. I, II e III X
+c. Apenas I e III
+d. Apenas II e III

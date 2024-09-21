@@ -1,0 +1,38 @@
+Analise as afirmações a respeito da linguagem JavaScript
+
+I. Os operadores lógico &&, || e ! são respectivamente operadores e, ou e negação
+
+II. Os comandos = e == são, respectivamente, de atribuição e comparação
+
+III. Não é preciso definir o tipo de dado de uma variável em JavaScript, ela pode assumir diferentes tipos ao longo de sua execução
+
+Estão corretas:
+
+MinhaResposta: I II e II									
+
+-------------------------------------------------------------------
+Analise as afirmações sobre o projeto desenvolvido em sala de aula:
+
+I. o seletor CSS z-index foi utilizado para que um botão pudesse deslizar por cima de uma outra área abaixo dele
+
+II. as variáveis CSS criadas com -- no início do nome foram utilizadas como recurso para permitir a troca de fundo claro para escurso, e vice-e-versa
+
+III. o seletor margin significa espaçamento interno, enquanto que o seletor padding significa espeçamento externo
+
+Estão corretas as afirmações:
+
+Escolha uma:
+
+MinhaResposta: apenas I e II 								ACERTEI
+---------------------------------------------------------------------------
+Analise as afirmações sobre as linguagens aprendidas até aqui no curso:
+
+I. HTML é uma linguagem de programação e de marcação de elementos no front-end
+
+II. Java Script é uma linguagem de programação no front-end e precisa de um navegador ou browser para interpretá-la
+
+III. Um projeto que segue as melhores práticas de programação possui 3 arquivos separados por suas funcionalidades: 1 arquivo HTML, 1 arquivo CSS e um arquivo JavaScript, sendo que o HTML possui referência para os arquivos CSS e JS
+
+Estão corretas as afirmações:
+
+MinhaResposta: Todas estão corretas
